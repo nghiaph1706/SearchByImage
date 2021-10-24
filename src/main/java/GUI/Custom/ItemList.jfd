@@ -1,0 +1,35 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :0:0:p, par l {comp txtpSnippet::l::290:x, comp txtpTitle::l::290:x, comp txtpDescription::t::290:x}, space :0:0:p}}"
+			"$verticalGroup": "par l {seq l {space :0:0:p, comp txtpTitle:::p:36:p, space :0:0:p, comp txtpDescription:::p:26:p, space :0:0:p, comp txtpSnippet::::93:x, space :0:0:p}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			add( new FormComponent( "javax.swing.JTextPane" ) {
+				name: "txtpDescription"
+				"text": "Description"
+				"font": new java.awt.Font( "Segoe UI", 0, 18 )
+				"foreground": new java.awt.Color( 204, 204, 204, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JTextPane" ) {
+				name: "txtpTitle"
+				"text": "Title"
+				"font": new java.awt.Font( "Segoe UI", 1, 24 )
+				"foreground": new java.awt.Color( 51, 51, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JTextPane" ) {
+				name: "txtpSnippet"
+				"text": "Snippet"
+				"font": new java.awt.Font( "Segoe UI", 0, 20 )
+				"foreground": new java.awt.Color( 0, 0, 0, 255 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 290, 155 )
+		} )
+	}
+}

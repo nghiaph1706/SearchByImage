@@ -1,0 +1,87 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.12" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:20:p, par l {seq {comp label1:::p::p, space s:::p, comp lblTag1:::p:88:p, space :::p, comp lblTag2:::p:83:p, space :::p, comp lblTag3:::p:81:p, space :::p, comp lblTag4:::p:82:p, space :::p, comp lblTag5:::p:91:p, space ::23:x}, seq {comp lblImage:::p:425:p, space ::31:x, par l {par l:::p {comp btnCap:::::x, comp btnImport:::::x}, comp btnPin:::p::p}, space :p:61:p}}}, comp panelListResult::l:::x}"
+			"$verticalGroup": "par l {seq {par l {seq {space :p:41:p, comp btnCap:::p::p, space s:::p, comp btnImport:::p::p, space u:::p, comp btnPin:::p::p}, seq {space :p:28:p, comp lblImage:::p:213:p}}, space u:::p, par l {comp label1:::p::p, seq t {par b:::p {comp lblTag1::b:p:26:p, comp lblTag2::b::0:x, comp lblTag3::b::0:x, comp lblTag4::b::0:x, comp lblTag5::b:p::p}, space :::p}}, comp panelListResult:::::x}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblImage"
+				"foreground": new java.awt.Color( 0, 204, 0, 255 )
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color red, 3, false )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnCap"
+				"text": "Capture"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnImport"
+				"text": "Import"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Result"
+				"foreground": new java.awt.Color( 255, 0, 51, 255 )
+				"font": new java.awt.Font( "Segoe UI", 1, 36 )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {comp scrollPane1::l::615:x}"
+				"$verticalGroup": "par l {comp scrollPane1::l::694:x}"
+			} ) {
+				name: "panelListResult"
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "GUI.Custom.JList_Model" ) {
+						name: "list_Model"
+					} )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblTag1"
+				"text": "TAG1"
+				"horizontalAlignment": 0
+				"font": &Font0 new java.awt.Font( "Segoe UI", 0, 14 )
+				"foreground": sfield java.awt.Color black
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblTag2"
+				"text": "TAG2"
+				"horizontalAlignment": 0
+				"font": #Font0
+				"foreground": sfield java.awt.Color black
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblTag3"
+				"text": "TAG3"
+				"horizontalAlignment": 0
+				"font": #Font0
+				"foreground": sfield java.awt.Color black
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblTag4"
+				"text": "TAG4"
+				"horizontalAlignment": 0
+				"font": #Font0
+				"foreground": sfield java.awt.Color black
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblTag5"
+				"text": "TAG5"
+				"horizontalAlignment": 0
+				"font": #Font0
+				"foreground": sfield java.awt.Color black
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnPin"
+				"text": "Pin"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 20 )
+			"size": new java.awt.Dimension( 615, 995 )
+		} )
+	}
+}
